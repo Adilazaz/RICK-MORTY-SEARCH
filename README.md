@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧪 Поиск персонажей Rick & Morty
 
-## Getting Started
+Простое React-приложение, которое позволяет пользователям искать персонажей из вселенной **Rick and Morty** с использованием [Rick and Morty API](https://rickandmortyapi.com/).
 
-First, run the development server:
+## 🧾 Описание
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Этот проект был создан в рамках технического задания для демонстрации навыков работы с React, обработки API и создания чистого, функционального UI/UX. Он позволяет пользователям вводить имя персонажа, получать совпадающие результаты и отображать их в виде карточек с ключевой информацией.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Возможности
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🔍 Поиск персонажей по имени
+- 📄 Отображение результатов в виде адаптивной сетки карточек
+- 📡 Использует публичный REST API Rick & Morty
+- 🧼 Чистый и минималистичный UI
+- 🔁 Обновления в реальном времени при отправке поиска
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Начало работы
 
-## Learn More
+### 1. Клонируйте репозиторий
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/Adilazaz/RICK-MORTY-SEARCH.git
+cd RICK-MORTY-SEARCH
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Установите зависимости
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install
 
-## Deploy on Vercel
+3. Запустите сервер разработки
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Теперь приложение будет доступно по адресу http://localhost:3000.
+
+🛠️ Используемые технологии
+⚛️ React (Функциональные компоненты + Хуки)
+
+💅 CSS
+
+📦 JavaScript (ES6)
+
+🌐 Fetch API
+
+📂 Структура проекта
+
+src/
+├── components/             UI-компоненты
+│   ├── __tests__/          компонентов
+│   │   ├── CharacterCard.test.tsx
+│   │   ├── CharacterList.test.tsx
+│   │   └── SearchBar.test.tsx
+│   ├── CharacterCard.tsx
+│   ├── CharacterList.tsx
+│   └── SearchBar.tsx
+├── pages/                 
+│   ├── _app.tsx
+│   └── index.tsx
+├── services/               
+│   ├── api.ts
+│   └── character.service.ts
+├── store/                
+│   ├── characterSlice.ts
+│   └── index.ts
+├── styles/               
+├── .babelrc               
+├── .gitignore              
+├── babel.config.js         
+├── eslint.config.js       
+├── jest.config.ts         
+├── jest.setup.ts           
+├── next-env.d.ts           
+├── next.config.js         
+├── package-lock.json       
+├── package.json           
+├── postcss.config.js      
+├── README.md              
+├── tailwind.config.js      
+├── tsconfig.json          
+└── tsconfig.ts             
+
+🚧 Известные проблемы / улучшения
+Пагинация ещё не реализована (показывается только первая страница результатов)
+
+Отсутствуют индикаторы загрузки и обработка ошибок
+
+Нужно улучшить мобильную адаптивность
+
+Отсутствуют метки доступности (aria)
+
+Тесты нужно добавить
+
+Эти проблемы могут быть улучшены в будущих версиях.
+
+🧑‍💻 Автор
+Adil Azaz
