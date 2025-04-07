@@ -45,39 +45,39 @@ npm start
 📂 Структура проекта
 
 src/
-├── components/             UI-компоненты
-│   ├── __tests__/          компонентов
+├── components/
+│   ├── __tests__/
 │   │   ├── CharacterCard.test.tsx
 │   │   ├── CharacterList.test.tsx
 │   │   └── SearchBar.test.tsx
 │   ├── CharacterCard.tsx
 │   ├── CharacterList.tsx
 │   └── SearchBar.tsx
-├── pages/                 
+├── pages/
 │   ├── _app.tsx
 │   └── index.tsx
-├── services/               
+├── services/
 │   ├── api.ts
 │   └── character.service.ts
-├── store/                
+├── store/
 │   ├── characterSlice.ts
 │   └── index.ts
-├── styles/               
-├── .babelrc               
-├── .gitignore              
-├── babel.config.js         
-├── eslint.config.js       
-├── jest.config.ts         
-├── jest.setup.ts           
-├── next-env.d.ts           
-├── next.config.js         
-├── package-lock.json       
-├── package.json           
-├── postcss.config.js      
-├── README.md              
-├── tailwind.config.js      
-├── tsconfig.json          
-└── tsconfig.ts             
+├── styles/
+├── .babelrc
+├── .gitignore
+├── babel.config.js
+├── eslint.config.js
+├── jest.config.ts
+├── jest.setup.ts
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
+└── tsconfig.ts
 
 🚧 Известные проблемы / улучшения
 Пагинация ещё не реализована (показывается только первая страница результатов)
