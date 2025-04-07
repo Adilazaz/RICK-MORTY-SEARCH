@@ -46,7 +46,7 @@ npm start
 
 src/           
 ├── components/           
-│   ├── __tests_/           
+│   ├── `__test__`/           
 │   │   ├── CharacterCard.test.tsx           
 │   │   ├── CharacterList.test.tsx           
 │   │   └── SearchBar.test.tsx           
